@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-export class ShopItem extends Component {
+export class itemDescription extends Component {
     render() {
+        console.log(this.props.key)
         return (
             <div>
                 
@@ -10,4 +11,4 @@ export class ShopItem extends Component {
     }
 }
 
-export default ShopItem
+export default itemDescription
