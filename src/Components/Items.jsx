@@ -1,7 +1,10 @@
-import React, { Component } from 'react'
-import itemDescription from './itemDescription'
+import React, { Component } from 'react';
+import ItemDescription from './ItemDescription';
 
 export class Items extends Component {
+    
+
+
     render() {
         console.log("hey")
         // console.log(this.props.itemList)                   
@@ -10,7 +13,7 @@ export class Items extends Component {
             <div>
                 {
                     this.props.itemList.map((obj) =>   
-                        <itemDescription key={obj.id} item={obj} ></itemDescription>
+                        <ItemDescription key={obj.id} item={obj} InsertToCart={this.props.InsertToCart} ></ItemDescription>
                     )
                 }
 
